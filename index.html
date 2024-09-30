@@ -5,88 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pengenalan Diri</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
   </head>
   <body>
-    <header>
-      <div class="container">
-        <h1>Fayz</h1>
-        <p>lorem</p>
-      </div>
-    </header>
+    <main id="main" data-scroll-container>
+      <span id="toggle-span" style="cursor: pointer">Pendingin</span>
+      <img id="image" src="ngongok.png" alt="Pendingin" />
+      <header data-scroll-section data-scroll-position="top">
+        <div class="container">
+          <h1
+            data-scroll
+            data-scroll-speed="4"
+            data-scroll-direction="horizontal"
+          >
+            Fayz
+          </h1>
+          <p data-scroll data-scroll-speed="4" data-scroll-direction="bottom">
+            lorem
+          </p>
+        </div>
+      </header>
+      <section id="about" class="section" data-scroll-section>
+        <div
+          class="container"
+          data-scroll
+          data-scroll-speed="1.5"
+          data-scroll-position="top"
+        >
+          <h2 data-scroll data-scroll-delay="0.05">Tentang Saya</h2>
+          <p data-scroll data-scroll-speed="1.2" data-scroll-delay="0.2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute.
+          </p>
+        </div>
+      </section>
 
-    <section id="about">
-      <div class="container">
-        <h2>Tentang Saya</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute.
+      <section id="education" class="section" data-scroll-section>
+        <div
+          class="container"
+          data-scroll
+          data-scroll-speed="2.5"
+          data-scroll-position="middle"
+        >
+          <h2 data-scroll data-scroll-speed="2.1">iuuyiohi</h2>
+          <ul data-scroll data-scroll-speed="2.7">
+            <li
+              data-scroll
+              data-scroll-speed="4"
+              data-scroll-direction="horizontal"
+            >
+              <strong>Jurusan A</strong> - Universitas A
+            </li>
+            <li
+              data-scroll
+              data-scroll-speed="5"
+              data-scroll-direction="horizontal"
+              data-scroll-section="#contact"
+            >
+              <strong>Jurusan B</strong> - Universitas B
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section" data-scroll-section>
+        <div
+          class="container"
+          data-scroll
+          data-scroll-speed="1"
+          data-scroll-position="bottom"
+        >
+          <h2 data-scroll data-scroll-speed="2.2" data-scroll-delay="0.1">
+            yuyygu
+          </h2>
+          <p data-scroll data-scroll-speed="1.8" data-scroll-delay="0.15">
+            Email:
+            <a
+              href="mailto:kokoko@okkok.com"
+              data-scroll
+              data-scroll-speed="0.8"
+              >okokoko@gmail.com</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer data-scroll-section>
+        <p data-scroll data-scroll-speed="1.2" data-scroll-position="bottom">
+          &copy; 2024 ioui. All rights reserved.
         </p>
-      </div>
-    </section>
+      </footer>
+    </main>
 
-    <section id="education">
-      <div class="container">
-        <h2>Pendidikan</h2>
-        <ul>
-          <li>
-            <strong>Jurusan A</strong> - Universitas A
-          </li>
-          <li>
-            <strong>Jurusan B</strong> - Universitas B
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="portfolio">
-      <div class="container">
-        <h2>Portfolio</h2>
-        <div class="portfolio-grid">
-          <div class="portfolio-item">
-            <h3>Project 1</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
-          </div>
-          <div class="portfolio-item">
-            <h3>Project 2</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
-          </div>
-          <div class="portfolio-item">
-            <h3>Project 3</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
-          </div>
-          <div class="portfolio-item">
-            <h3>Project 4</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="gallery">
-      <div class="container">
-        <h2>Galeri</h2>
-        <div class="gallery-grid">
-          <img src="https://via.placeholder.com/300" alt="Gambar 1" />
-          <img src="https://via.placeholder.com/300" alt="Gambar 2" />
-          <img src="https://via.placeholder.com/300" alt="Gambar 3" />
-          <img src="https://via.placeholder.com/300" alt="Gambar 4" />
-          <img src="https://via.placeholder.com/300" alt="Gambar 5" />
-          <img src="https://via.placeholder.com/300" alt="Gambar 6" />
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <h2>Kontak Saya</h2>
-        <p>Email: <a href="mailto:kokoko@okkok.com">okokoko@gmail.com</a></p>
-      </div>
-    </section>
-
-    <footer>
-      <p>&copy; 2024 ioui. All rights reserved.</p>
-    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="script.js"></script>
+    <script src="wokw.js"></script>
   </body>
 </html>
